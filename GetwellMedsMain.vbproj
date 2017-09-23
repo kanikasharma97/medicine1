@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{894ADA13-8538-485A-A540-917D5D5D6A40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GetwellMedsMain.My.MyApplication</StartupObject>
+    <RootNamespace>GetwellMedsMain</RootNamespace>
+    <AssemblyName>GetwellMedsMain</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GetwellMedsMain.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GetwellMedsMain.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMedicine.Designer.vb">
+      <DependentUpon>AddMedicine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedicine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOffers.Designer.vb">
+      <DependentUpon>AddOffers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOffers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.vb">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Designer.vb">
+      <DependentUpon>ADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.vb">
+      <DependentUpon>AddOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authenticator.vb" />
+    <Compile Include="Connector.vb" />
+    <Compile Include="GetWellmedsdatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetWellmedsdatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.Designer.vb">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm.Designer.vb">
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UpdateOffers.Designer.vb">
+      <DependentUpon>UpdateOffers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOffers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMedicine.Designer.vb">
+      <DependentUpon>UpdateMedicine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMedicine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOrder.Designer.vb">
+      <DependentUpon>UpdateOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUser.Designer.vb">
+      <DependentUpon>UpdateUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validator.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddMedicine.resx">
+      <DependentUpon>AddMedicine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOffers.resx">
+      <DependentUpon>AddOffers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOffers.resx">
+      <DependentUpon>UpdateOffers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMedicine.resx">
+      <DependentUpon>UpdateMedicine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOrder.resx">
+      <DependentUpon>UpdateOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUser.resx">
+      <DependentUpon>UpdateUser.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GetWellmedsdatabaseDataSet.xsc">
+      <DependentUpon>GetWellmedsdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GetWellmedsdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GetWellmedsdatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GetWellmedsdatabaseDataSet.xss">
+      <DependentUpon>GetWellmedsdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GetWellmedsdatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GetWellmedsdatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>GetWellmedsdatabase.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medmals-header1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
